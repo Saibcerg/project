@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    body {
+        padding: 10px 20px;
+    }
+</style>
+
+
+<body>
+
+
+    
+
+    <!-- <form action="jsjs.html" > -->
+    <form action="">
+        <label class="form-label">Enter Your Name</label>
+        <input type="text" value="" class="form-control">
+        <div class="text-danger small nameErr"></div>
+
+        <label class="form-label mt-4">Phone</label>
+        <input type="tel" class="form-control">
+        <div class="text-danger small phoneErr"></div>
+
+        <button type="button" class="btn btn-primary mt-4"> Submit </button>
+
+    </form>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+ <script>
+
+let button=document.querySelector("button");
+
+button.addEventListener("click", check)
+
+function check(){
+
+    let name=document.querySelector("[type='text']").value.trim();
+
+   let phone=document.querySelector("[type='tel']").value.trim();
+
+    let nameErr=document.querySelector(".nameErr");
+
+    let phoneErr=document.querySelector(".phoneErr");
+
+    if(name==""){
+
+
+        nameErr.innerHTML="plz insert valid name"
+    }
+
+else{
+
+    nameErr.innerHTML="correct"
+
+}
+
+// .test()
+//if(/^[987]{1}[0-9]{9}/.test(phone) === true)
+if(/^[987]{1}[0-9]{9}/.test("phone") !== true)
+
+{
+
+phoneErr.innerHTML="plz insert valid no."
+}
+else{
+
+    phoneErr.innerHTML="correct"
+}
+}
+
+
+
+
+</script> 
+
+
+
+    <!-- <script>
+
+        let button = document.querySelector("button");
+
+        button.addEventListener("click", check);
+
+        function check() {
+
+            let name = document.querySelector("[type='text']").value.trim();
+            let phone = document.querySelector("[type='tel']").value.trim();
+            let nameErr = document.querySelector(".nameErr");
+            let phoneErr = document.querySelector(".phoneErr");
+
+
+            if (name == "") {
+                nameErr.innerHTML = "Name cannot be empty";
+            }
+            else {
+                nameErr.innerHTML = "Correct Name"
+            }
+
+
+            if (/^[987]{1}[0-9]{9}/.test(phone) === true) {
+                phoneErr.innerHTML = "Correct phone number"
+            }
+            else {
+                phoneErr.innerHTML = "Wrong phone number"
+            }
+        }
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <script>
+
+
+
+    let button = document.querySelector("#b1");
+    let button2=document.querySelector("#b2");
+
+
+  button.addEventListener("mouseover", tap );
+
+function tap(){
+
+document.querySelector("#h1").innerHTML="mouseover"
+
+}
+
+
+
+
+button.addEventListener("mouseout", tapOut )
+
+function tapOut(){
+
+document.querySelector("#h1").innerHTML="mouteout"
+}
+
+
+button2.addEventListener("click",reset)
+function reset(){
+
+
+    document.querySelector("#h1").innerHTML=""
+}
+
+
+</script> -->
+
+
+
+
+
+
+
+    <!-- <h1 id="h1">etc</h1>
+
+    <button id="b1" >change</button>
+
+<script>
+
+ let button=document.querySelector("#b1");
+
+button.addEventListener("click",change)
+
+function change(){
+
+//document.querySelector("#h1").style.fontSize="50px" + .style.color="red"
+
+  
+
+
+document.querySelector("#h1").style.color="red" ;
+
+document.querySelector("#h1").style.fontSize="50px";
+
+
+
+}
+
+</script> -->
+
+
+   
+
+
+
+</body>
+
+</html>
