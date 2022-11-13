@@ -97,12 +97,12 @@ body {
     color: white;
 }
 
-.primaryul li a:hover::before {
-    width: 100%;
+ .primaryul li a:hover::before {
+    width: 90%;
 
 }
 
-.primaryul a:not(.dropdown-toggle)::before {
+.primaryul a:not(.dropdown-menu)::before {
     position: absolute;
     bottom: -4px;
 
@@ -130,7 +130,8 @@ body {
 
 .header{
 position: relative;
-overflow: hidden; }
+/* overflow: hidden; */
+ }
 
 header {
     z-index: 99;
